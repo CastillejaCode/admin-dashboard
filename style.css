@@ -332,6 +332,30 @@ body {
   background-color: #8da7be;
 }
 
+.upper-row {
+  padding: 2rem 3rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  height: 30px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: #87919e;
+  border: 1px solid black;
+  outline: none;
+}
+.search input:focus {
+  transition: 0.3s;
+  background-color: #eaeaea;
+}
+.search label {
+  padding: 0 1rem;
+}
+
 .sidebar {
   grid-column: 1/2;
   grid-row: 1/3;
