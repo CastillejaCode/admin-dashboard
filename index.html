@@ -4,6 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<style>
+			.material-symbols-outlined {
+				font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+			}
+		</style>
 		<link rel="stylesheet" href="style.css" />
 		<title>Admin Dashboard</title>
 	</head>
@@ -11,12 +20,31 @@
 		<div class="container">
 			<div class="header">
 				<div class="upper-row">
-					<input type="text" />
-					<div class="user-small"></div>
+					<div class="search">
+						<label for="search-input">
+							<span class="material-symbols-outlined">search</span>
+						</label>
+						<input type="text" name="search-input" id="search-input" />
+					</div>
+					<div class="user-small">
+						<span class="material-symbols-outlined">notifications_active</span>
+						<img src="images/walter-surprised.png" alt="small-profile-pic" />
+						<p>Catsarecool123</p>
+					</div>
 				</div>
 				<div class="lower-row">
-					<div class="user-big"></div>
-					<div class="actions"></div>
+					<div class="user-big">
+						<img src="images/walter-surprised.png" alt="profile-picture" />
+						<div class="user-big-name">
+							<p>Hello,</p>
+							<h1>Catsarecool123 (@catcatcat)</h1>
+						</div>
+					</div>
+					<div class="actions">
+						<button>New Cat</button>
+						<button>Upload Cat</button>
+						<button>Share Cat</button>
+					</div>
 				</div>
 			</div>
 
@@ -40,7 +68,86 @@
 					</ul>
 				</div>
 			</div>
-			<div class="content"></div>
+			<div class="content">
+				<div class="cats">
+					<!-- <h1>Your</h1> -->
+					<div class="cards">
+						<div class="images card-1"></div>
+						<div class="name">Maxwell</div>
+						<div class="options">
+							<span class="material-symbols-outlined">favorite</span>
+							<span class="material-symbols-outlined">thumb_up</span>
+							<span class="material-symbols-outlined">share</span>
+						</div>
+					</div>
+					<div class="cards">
+						<div class="images card-2"></div>
+						<div class="name">Barnaby</div>
+						<div class="options">
+							<span class="material-symbols-outlined">favorite</span>
+							<span class="material-symbols-outlined">thumb_up</span>
+							<span class="material-symbols-outlined">share</span>
+						</div>
+					</div>
+					<div class="cards">
+						<div class="images card-3"></div>
+						<div class="name">Peaches</div>
+						<div class="options">
+							<span class="material-symbols-outlined">favorite</span>
+							<span class="material-symbols-outlined">thumb_up</span>
+							<span class="material-symbols-outlined">share</span>
+						</div>
+					</div>
+					<div class="cards">
+						<div class="images card-4"></div>
+						<div class="name">Corn</div>
+						<div class="options">
+							<span class="material-symbols-outlined">favorite</span>
+							<span class="material-symbols-outlined">thumb_up</span>
+							<span class="material-symbols-outlined">share</span>
+						</div>
+					</div>
+					<div class="cards">
+						<div class="images card-5"></div>
+						<div class="name">Eugene</div>
+						<div class="options">
+							<span class="material-symbols-outlined">favorite</span>
+							<span class="material-symbols-outlined">thumb_up</span>
+							<span class="material-symbols-outlined">share</span>
+						</div>
+					</div>
+					<div class="cards">
+						<div class="images card-6"></div>
+						<div class="name">Harold</div>
+						<div class="options">
+							<span class="material-symbols-outlined">favorite</span>
+							<span class="material-symbols-outlined">thumb_up</span>
+							<span class="material-symbols-outlined">share</span>
+						</div>
+					</div>
+				</div>
+				<div class="announcements">
+					<h1>announcements</h1>
+					<div class="info">
+						<div class="info-1">
+							<h4>Happy Cat Day!</h4>
+							<p>
+								Enjoy, we have add 100 cattogems to everyone's account! Get
+								those cats!
+							</p>
+						</div>
+						<div class="info-2">
+							<h4>Scheduled Maintenance</h4>
+							<p>Servers will be offline for 3 hours, starting at 13:00 UTC.</p>
+						</div>
+						<div class="info-3">
+							<h4>What is your favorite cat color?</h4>
+							<p>Take the poll and enter for a chance to win 5 cats!</p>
+						</div>
+					</div>
+				</div>
+				<div class="trending"></div>
+			</div>
 		</div>
 	</body>
 </html>
