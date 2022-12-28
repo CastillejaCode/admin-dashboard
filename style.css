@@ -469,14 +469,25 @@ body {
 }
 .sidebar ul li {
   all: unset;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
   transition: 0.5s ease-out;
   cursor: pointer;
 }
 .sidebar ul li:hover {
-  transform: translateX(30px);
+  transform: translateX(10px);
 }
 .sidebar div {
   padding: 2rem 4rem;
+}
+
+.functions span {
+  margin-right: 5px;
+}
+
+.settings span {
+  margin-right: 5px;
 }
 
 .logo {
@@ -498,11 +509,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.cats h3 {
-  position: absolute;
-  top: 23%;
-  left: 16%;
-}
 
 .cards {
   display: flex;
@@ -515,6 +521,10 @@ body {
   background-color: #eaeaea;
   font-size: 1.5rem;
   overflow: hidden;
+  transition: 0.3s;
+}
+.cards:hover {
+  transform: scale(1.05);
 }
 
 .images {
@@ -558,7 +568,6 @@ body {
 
 .options span {
   cursor: pointer;
-  transition: 0.3s;
   padding: 0.5rem 1rem;
 }
 .options span:hover {
